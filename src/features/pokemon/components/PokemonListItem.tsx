@@ -25,7 +25,7 @@ export default function PokemonListItem({ pokemon }: Props) {
 
       <CardContent className="flex flex-col justify-center items-center gap-2">
         <p className="text-xs text-muted-foreground">
-          #{pokemon.id.toString().padStart(3, "0")}
+          {`#${pokemon.id.toString().padStart(3, "0")}`}
         </p>
 
         <h4 className="font-medium capitalize">{pokemon.name}</h4>
