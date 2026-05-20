@@ -1,5 +1,3 @@
-"use client";
-
 import { LucideSearch } from "lucide-react";
 
 import {
