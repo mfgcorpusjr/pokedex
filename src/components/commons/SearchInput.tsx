@@ -7,15 +7,16 @@ import {
 } from "@/components/ui/input-group";
 
 type Props = {
+  placeholder?: string;
   onSearch: (search: string) => void;
 };
 
-export default function SearchInput({ onSearch }: Props) {
+export default function SearchInput({ placeholder, onSearch }: Props) {
   return (
     <InputGroup className="max-w-xl mx-auto">
       <InputGroupInput
         onChange={(e) => onSearch(e.target.value)}
-        placeholder="Search Pokemon..."
+        placeholder={placeholder}
       />
 
       <InputGroupAddon align="inline-start">

@@ -1,6 +1,6 @@
 import type { Pokemon } from "@/features/pokemon/utils/types";
 
-export const getPokemons = async () => {
+const getPokemons = async () => {
   try {
     const res = await fetch("https://pokeapi.co/api/v2/pokemon?limit=40");
     const data: { results: { url: string }[] } = await res.json();
@@ -30,3 +30,5 @@ export const getPokemons = async () => {
 
   return [];
 };
+
+export default getPokemons;

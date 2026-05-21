@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import SearchInput from "@/components/SearchInput";
+import SearchInput from "@/components/commons/SearchInput";
 import PokemonList from "@/features/pokemon/components/PokemonList";
 
 import type { Pokemon } from "@/features/pokemon/utils/types";
@@ -24,7 +24,7 @@ export default function PokemonWrapper({ pokemons }: Props) {
 
   return (
     <>
-      <SearchInput onSearch={handleSearch} />
+      <SearchInput placeholder="Search Pokemon..." onSearch={handleSearch} />
 
       <PokemonList pokemons={pokemonsState} />
     </>

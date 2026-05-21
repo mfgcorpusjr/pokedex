@@ -1,6 +1,6 @@
 import PokemonWrapper from "@/features/pokemon/components/PokemonWrapper";
 
-import { getPokemons } from "@/features/pokemon/utils/queries";
+import getPokemons from "@/features/pokemon/queries/getPokemons";
 
 export default async function HomePage() {
   const pokemons = await getPokemons();
