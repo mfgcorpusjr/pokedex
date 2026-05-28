@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import SearchInput from "@/components/commons/SearchInput";
+import SearchInput from "@/components/common/SearchInput";
 import PokemonList from "@/features/pokemon/components/PokemonList";
 
 import type { Pokemon } from "@/features/pokemon/utils/types";
